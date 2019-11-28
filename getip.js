@@ -8,6 +8,7 @@ if (this.readyState == 4 && this.status == 200) {
       var result = JSON.parse(this.responseText);
       document.write("IP ADDRESS: " + result.ip_address);
       console.log(result);
+      console.log(result.ip_address);
     }
 };
 
