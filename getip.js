@@ -6,7 +6,7 @@ var url = "https://ipfind.co/?auth=" + auth + "&ip=" + ip_address;
 xmlhttp.onreadystatechange = function() {
 if (this.readyState == 4 && this.status == 200) {
       var result = JSON.parse(this.responseText);
-      console.log(result);
+      document.write("IP ADDRESS: " + result);
     }
 };
 
